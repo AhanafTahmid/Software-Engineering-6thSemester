@@ -1,1 +1,1 @@
-Reposity of Lab Tasks of Software Development Course 
+Reposity of Lab Tasks of Software Development + Software Engineering Course 
