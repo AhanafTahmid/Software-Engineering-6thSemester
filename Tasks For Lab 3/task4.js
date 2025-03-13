@@ -11,29 +11,29 @@
 //   } }
 
 
-// //2. O - Open/Closed Principle (OCP)
-// class Human {
-//     constructor(name, age) {
-//         this.name = name;
-//         this.age = age;
-//     }
+//2. O - Open/Closed Principle (OCP)
+class Human {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
     
-//     speak() {
-//         //...
-//     }
-// }
+    speak() {
+        //...
+    }
+}
 
-// class Baby extends Human {
-//     speak() {
-//         return "Goo goo ga ga!";
-//     }
-// }
+class Baby extends Human {
+    speak() {
+        return "Goo goo ga ga!";
+    }
+}
 
-// class Teenager extends Human {
-//     speak() {
-//         return "Whatever...";
-//     }
-// }
+class Teenager extends Human {
+    speak() {
+        return "Whatever...";
+    }
+}
 
 
 //3. L - Liskov Substitution Principle (LSP)
