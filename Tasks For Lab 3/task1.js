@@ -45,4 +45,4 @@ class BankAccount{
  
 let o = new BankAccount(1, "Ahanaf", 0);
 console.log(o.deposit(100)); 
-console.log(o.withdraw(11)); 
+console.log(o.withdraw(11));

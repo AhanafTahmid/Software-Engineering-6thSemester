@@ -20,19 +20,19 @@ arrr.push("BOOK4");
 //2
 
 //Array to object
-// const memberss = [{name: "ahanafffff"}, {name: "tahmid"}];
-// for(m of memberss)console.log(m.name);
+const memberss = [{name: "ahanafffff"}, {name: "tahmid"}];
+for(m of memberss)console.log(m.name);
 
-// console.log("\n\n");
+console.log("\n\n");
 
-// //Object to Object
-// const members = {
-//     101: { name: "Alice", membershipDate: "2021-01-01", booksBorrowed: [1, 3] },
-//     102: { name: "Bob", membershipDate: "2022-05-15", booksBorrowed: [2] },
-// };
-// console.log(typeof(members));
+//Object to Object
+const members = {
+    101: { name: "Alice", membershipDate: "2021-01-01", booksBorrowed: [1, 3] },
+    102: { name: "Bob", membershipDate: "2022-05-15", booksBorrowed: [2] },
+};
+console.log(typeof(members));
  
-// for(mem in members)console.log( members[mem].name );
+for(mem in members)console.log( members[mem].name );
 
 
 
@@ -42,11 +42,10 @@ arrr.push("BOOK4");
 
 //Tuple, Sort off ...
 
-// const tuplee = Object.freeze({
-//   id: 4,
-//   title: "Brave New World",
-//   author: "Aldous Huxley"
-// });
-// tuplee.id = 5;//id not changed because of freeze
-// console.log(tuplee.id);
-
+const tuplee = Object.freeze({
+  id: 4,
+  title: "Brave New World",
+  author: "Aldous Huxley"
+});
+tuplee.id = 5;//id not changed because of freeze
+console.log(tuplee.id);
