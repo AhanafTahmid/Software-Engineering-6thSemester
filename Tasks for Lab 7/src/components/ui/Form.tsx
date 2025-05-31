@@ -1,7 +1,6 @@
-// Write code on your own
 import { useState } from 'react';
 
-type FormData = {
+interface FormData{
   name: string;
   email: string;
 };
@@ -27,5 +26,4 @@ const Form = () => {
     </form>
   );
 };
-
 export default Form;

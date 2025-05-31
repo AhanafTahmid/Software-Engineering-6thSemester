@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+## Tutorial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Notes
 
-Currently, two official plugins are available:
+kebab-case, snake case, PascalCase
+anything inside {} is javascript, else html
+Using class instead of className
+must name function with capital letters
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pro Tips
+Component Design Principles
+1. Single Responsibility: Each component should do one thing well
+2. Reusability: Design components to be used in multiple places
+3. Composition over Inheritance: Build complex UIs by combining simple
+components
+4. Props Interface: Always define TypeScript interfaces for props
+File Naming Conventions
+• PascalCase for component files: UserProfile.tsx
+• Match the component name: UserProfile component in UserProfile.tsx
+• Use descriptive names: SubmitButton.tsx instead of Button.tsx  
 
-## Expanding the ESLint configuration
+Props Best Practices
+1. Always define TypeScript interfaces
+2. Use destructuring for cleaner code
+3. Provide default values
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+State vs Props
+Props:
+- Data passed from parent to child
+- Read-only (cannot be modified by child)
+- Like function parameters
+State:
+- Data managed within a component
+- Can be modified using setter functions
+- Triggers re-render when changed
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Different Types of State
+1. Simple Values
+2. Objects
+interface User {
+name: string
+email: string
+age: number
+}
+const [user, setUser] = useState<User>({
+name: '',
+email: '',
+age: 0
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Arrays
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+State Updates are Async
+setCount(count + 1);
+console.log(count); // ❗ Still logs the old value
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Use the functional update form if you depend on the previous state:
+setCount(prevCount => prevCount + 1);
+
+4. 

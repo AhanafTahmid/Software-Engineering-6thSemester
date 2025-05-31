@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 
-type User = {
+interface User{
   id: number;
   name: string;
   email: string;
 };
-
 const UserList = () => {
   const [users, setUsers] = useState<User[]>([]);
 

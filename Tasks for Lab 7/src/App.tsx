@@ -1,4 +1,3 @@
-import Counter from './components/Counter'
 import Greeting from './components/Greeting'
 import { useState } from 'react';
 import NavBar from './components/ui/NavBar';
@@ -6,6 +5,7 @@ import UserCard from './components/ui/UserCard';
 import './index.css';
 import UserList from './components/ui/UserList';
 import Form from './components/ui/Form';
+import CardList from './components/ui/CardList';
 
 function App() {
   const [count, setcount] =  useState(0);
@@ -24,6 +24,13 @@ function App() {
   const fruits: string[] = ['Apple', 'Banana', 'Mango'];
   const sports: string[] = ['Cricket', 'Hockey', 'Football'];
 
+  const [showMessage, setShowMessage] = useState(false);
+
+  const toggleMessage = () => {
+    setShowMessage(prev => !prev);
+  };
+
+
   return (
     <>  
       <NavBar/>
@@ -34,7 +41,6 @@ function App() {
         <button onClick={handleClick}>Click Me</button> 
         <button onClick={handleReset}>Reset</button> 
         <div>Count: {count}</div>
-       <Counter/>
        <br/>
        <hr/>
        <hr/>
@@ -51,15 +57,21 @@ function App() {
           sports.map((val, idx)=>(
             <li> {val} </li>
           ))
-        
         )
         }
        </ul>
 
+        <hr/>
+        <CardList/>
        <hr/>
        <UserList/>
        <hr/>
        
+       <button onClick={toggleMessage}>
+        {showMessage ? 'Hide Message' : 'Show Message'}
+      </button>
+       {showMessage && <p>This is a toggled message!</p>}
+      <hr/>
        <Form/>
 
        
