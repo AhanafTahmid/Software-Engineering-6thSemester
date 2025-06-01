@@ -2,9 +2,10 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const mongoose = require('mongoose');
-
+const dotenv = require('dotenv');
+dotenv.config();
 //connect mongoDB
-const str = 'mongodb+srv://ahanaf627:uU8tjDeyvY80Jlmo@cluster0.jjc6mcn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const str = process.env.MONGO_URL;
 mongoose.connect(str)
 .then(() => {
     console.log("Connected to MongoDB");

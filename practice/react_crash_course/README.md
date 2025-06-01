@@ -7,6 +7,9 @@ anything inside {} is javascript, else html
 Using class instead of className
 must name function with capital letters
 
+React hooks like useState must be called inside a functional component, not at the top level of your file.
+
+
 Pro Tips
 Component Design Principles
 1. Single Responsibility: Each component should do one thing well
@@ -56,4 +59,5 @@ console.log(count); // ❗ Still logs the old value
 Use the functional update form if you depend on the previous state:
 setCount(prevCount => prevCount + 1);
 
-4. 
+
+Event Handling
