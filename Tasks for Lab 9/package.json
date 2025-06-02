@@ -1,0 +1,21 @@
+{
+  "name": "tasks-for-lab-9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon calculator.js",
+    "test": "jest"
+  },
+  "author": "ahanaf",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.8",
+    "enzyme-to-json": "^3.6.2",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
