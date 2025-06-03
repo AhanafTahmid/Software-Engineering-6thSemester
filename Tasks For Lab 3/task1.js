@@ -7,7 +7,7 @@ class BankAccount{
         this.#account_holder_name = account_holder_name;
         this.#balance = balance;
     }
-    
+    // Getters and Setters
     get account_holder_name() {
       return this.#account_holder_name;
     }

@@ -3,7 +3,6 @@ var a = "From Var";
 let b = "From Let";
 const c = "From Const";
 // console.log(c);
-
 //-----------------------------------------------------
 
 //Different Datatype
