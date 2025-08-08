@@ -18,3 +18,5 @@ https://docs.google.com/document/d/1v3gUz_w-cbpoeJZf_tAqbcY44U8fEnPKj1DFMC_DCSU/
 https://docs.google.com/document/d/1Taj3N3QKWEDfOXB2ZhQASqlNRka8-s4Jfapl8T46dUg/edit
 ## Lab Report 9:
 https://docs.google.com/document/d/1ek9FWSM-lxLKzLRzFky7LHcICOvIBRP2CUTsXpTHvY0/edit
+## Lab Report 10:
+https://docs.google.com/document/d/1bHpy3HAot6SjVfEqHbeFJb4LYQyFApdRK330sAcDWM4/edit?usp=sharing
